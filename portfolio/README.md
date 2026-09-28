@@ -14,9 +14,9 @@ Open http://localhost:4173. Deploy the `dist` directory to any static hosting se
 
 ## Content
 
-- `dist/app.js`: translations and the seven project records.
+- `dist/app.js`: translations and the eight project records.
 - `dist/styles.css`: design, responsive layouts, animations, and reduced-motion support.
-- `dist/gallery.css`: responsive project covers and galleries for Medcare, Quarto, Alopr, Ava, and Skinalyze.
+- `dist/gallery.css`: responsive project covers and galleries for Medcare, Quarto, Alopr, Ava, Skinalyze, and Nagah.
 - `dist/assets/medcare/`: 14 unchanged user-supplied screenshots and the app icon board.
 - `dist/assets/quarto/`: nine original PNGs, with optimized WebP display images and thumbnails.
 - `dist/assets/alopr/`: six supplied flow boards encoded as WebP, plus lightweight thumbnails.
@@ -28,3 +28,5 @@ Experience follows the user's corrections: five years, Baianat ending January 20
 Google Fonts is optional; local system fonts are used if unavailable. Motion respects the OS reduced-motion preference and has a footer pause control.
 
 
+
+Nagah includes two generated interface boards (six screens) for home, map, reporting, report tracking, area insights, and admin review. Features were checked against D:/ngah. The current map implementation uses flutter_map with OpenStreetMap tiles; google_maps_flutter is declared but is not used by the map screen. Design prompts and provenance are in NAGAH_INTERFACE_PROMPTS.md. Stars, command symbols, decorative plus marks and navigation icons use inline SVG for consistent mobile rendering.

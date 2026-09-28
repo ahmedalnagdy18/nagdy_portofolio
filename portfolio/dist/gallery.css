@@ -15,7 +15,7 @@
 .cover-side:last-child{transform:translateY(30px)}
 .gallery-dialog{width:min(1150px,calc(100% - 40px));padding:38px;max-height:92dvh;overscroll-behavior:contain}
 .gallery-dialog #dialog-content{display:grid;grid-template-columns:.85fr 1.2fr;gap:38px;align-items:start}
-.gallery-dialog .dialog-close{position:sticky;display:block;margin-inline-start:auto;top:0;inset-inline-end:auto;width:36px;height:36px;border-radius:50%;background:#30392d;z-index:3;margin-top:-22px;margin-inline-end:-22px}
+.gallery-dialog .dialog-close{position:sticky;display:grid;place-items:center;margin-inline-start:auto;top:0;inset-inline-end:auto;width:44px;height:44px;border-radius:50%;background:#30392d;z-index:3;margin-top:-22px;margin-inline-end:-22px}
 .project-detail-copy{min-width:0}
 .gallery-dialog .project-detail-copy{padding-top:18px}
 .gallery-dialog .project-detail-copy>p{font-size:16px;line-height:1.8}
@@ -28,7 +28,7 @@
 .gallery-stage.is-zoomed{display:block;touch-action:auto}
 .gallery-stage.is-zoomed img{width:100%;height:auto;max-height:none;max-width:none;border-radius:6px}
 .gallery-toolbar{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;gap:12px;margin-top:12px}
-.gallery-toolbar button{width:44px;height:44px;padding:0;border:1px solid #45543e;border-radius:50%;font-size:22px;background:#202a1d}
+.gallery-toolbar button{width:44px;height:44px;padding:0;border:1px solid #45543e;border-radius:50%;font-size:22px;background:#202a1d;display:grid;place-items:center;appearance:none;-webkit-appearance:none;line-height:1}
 .gallery-toolbar button:hover{background:var(--lime);color:var(--bg)}
 .gallery-caption{text-align:center;display:flex;flex-direction:column;gap:2px;min-width:0;line-height:1.4}
 .gallery-caption strong{font-size:14px;font-weight:500}
@@ -130,5 +130,15 @@
 .skinalyze-presentation .ava-cover-image{background:#f5f5ed}
 .skinalyze-gallery .gallery-stage{background:radial-gradient(ellipse at center,#28493b,#12261e);border-color:#52715d}
 .skinalyze-gallery .gallery-thumbnails button[aria-pressed=true]{border-color:#cbe5b9}
+
+/* Nagah follows the shared interface-board presentation with its road-map palette. */
+.project-card.featured-project .nagah-presentation{height:530px;background:#f5f2eb;color:#172d3b;border-color:#d9d1c4;padding:24px 32px}
+.nagah-presentation .ava-cover-heading strong span{color:#ef713e}
+.nagah-presentation .presentation-label{border-color:#c7b7a8}
+.nagah-presentation .ava-cover-image{background:#f5f2eb}
+.nagah-presentation .ava-cover-image img{object-fit:contain}
+.nagah-gallery .gallery-stage{background:radial-gradient(ellipse at center,#284451,#101f2a);border-color:#51616a}
+.nagah-gallery .gallery-thumbnails button[aria-pressed=true]{border-color:#ef713e}
+@media(max-width:650px){.project-card.featured-project .nagah-presentation{height:300px;padding:18px}.nagah-presentation .ava-cover-image img{object-fit:contain}}
 
 
